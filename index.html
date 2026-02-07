@@ -22,7 +22,7 @@
 
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', sans-serif;
-            background: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 100%);
+            background: #000000;
             color: #ffffff;
             min-height: 100vh;
             padding: 20px;
@@ -43,7 +43,7 @@
             font-size: 36px;
             font-weight: 900;
             letter-spacing: 4px;
-            background: linear-gradient(135deg, #00ff87 0%, #60efff 100%);
+            background: linear-gradient(135deg, #FFE600 0%, #FFA500 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -69,8 +69,9 @@
 
         .workout-card:hover {
             background: rgba(255, 255, 255, 0.05);
-            border-color: rgba(0, 255, 135, 0.3);
+            border-color: rgba(255, 230, 0, 0.3);
             transform: translateY(-2px);
+            box-shadow: 0 4px 20px rgba(255, 230, 0, 0.15);
         }
 
         .workout-header {
@@ -83,7 +84,10 @@
         .workout-name {
             font-size: 18px;
             font-weight: 700;
-            color: #00ff87;
+            background: linear-gradient(135deg, #FFE600 0%, #FFA500 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
 
         .workout-number {
@@ -128,14 +132,14 @@
 
         input[type="number"]:focus, input[type="text"]:focus, input[type="date"]:focus, select:focus {
             outline: none;
-            border-color: #00ff87;
-            background: rgba(0, 255, 135, 0.05);
+            border-color: #FFE600;
+            background: rgba(255, 230, 0, 0.05);
         }
 
         .add-btn {
             width: 100%;
             padding: 16px;
-            background: linear-gradient(135deg, #00ff87 0%, #60efff 100%);
+            background: linear-gradient(135deg, #FFE600 0%, #FFA500 100%);
             border: none;
             border-radius: 16px;
             color: #000;
@@ -146,11 +150,13 @@
             letter-spacing: 2px;
             text-transform: uppercase;
             transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255, 230, 0, 0.3);
         }
 
         .add-btn:hover {
             transform: translateY(-2px);
-            box-shadow: 0 8px 24px rgba(0, 255, 135, 0.3);
+            box-shadow: 0 8px 25px rgba(255, 230, 0, 0.5);
+            background: linear-gradient(135deg, #FFA500 0%, #FFE600 100%);
         }
 
         .records-section {
@@ -161,7 +167,10 @@
             font-size: 20px;
             font-weight: 700;
             margin-bottom: 20px;
-            color: #00ff87;
+            background: linear-gradient(135deg, #FFE600 0%, #FFA500 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
             letter-spacing: 2px;
         }
 
@@ -173,17 +182,21 @@
         }
 
         .stat-card {
-            background: rgba(0, 255, 135, 0.05);
-            border: 1px solid rgba(0, 255, 135, 0.2);
+            background: linear-gradient(135deg, rgba(255, 230, 0, 0.08) 0%, rgba(255, 165, 0, 0.08) 100%);
+            border: 1px solid rgba(255, 230, 0, 0.3);
             border-radius: 16px;
             padding: 20px;
             text-align: center;
+            box-shadow: 0 2px 10px rgba(255, 230, 0, 0.1);
         }
 
         .stat-value {
             font-size: 28px;
             font-weight: 700;
-            color: #00ff87;
+            background: linear-gradient(135deg, #FFE600 0%, #FFA500 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
             margin-bottom: 4px;
         }
 
@@ -231,7 +244,10 @@
         .calendar-month {
             font-size: 18px;
             font-weight: 700;
-            color: #00ff87;
+            background: linear-gradient(135deg, #FFE600 0%, #FFA500 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
 
         .calendar-month-stat {
@@ -242,7 +258,7 @@
         }
 
         .calendar-month-stat span {
-            color: #60efff;
+            color: #FFE600;
             font-weight: 700;
         }
 
@@ -257,8 +273,9 @@
         }
 
         .calendar-nav:hover {
-            background: rgba(0, 255, 135, 0.1);
-            border-color: #00ff87;
+            background: linear-gradient(135deg, rgba(255, 230, 0, 0.15) 0%, rgba(255, 165, 0, 0.1) 100%);
+            border-color: #FFE600;
+            box-shadow: 0 2px 10px rgba(255, 230, 0, 0.2);
         }
 
         .calendar-weekdays {
@@ -305,21 +322,23 @@
         }
 
         .calendar-day.today {
-            border-color: #60efff;
-            color: #60efff;
+            border-color: #FFE600;
+            color: #FFE600;
         }
 
         .calendar-day.has-workout {
-            background: rgba(0, 255, 135, 0.15);
-            border-color: rgba(0, 255, 135, 0.4);
-            color: #00ff87;
+            background: linear-gradient(135deg, rgba(255, 230, 0, 0.2) 0%, rgba(255, 165, 0, 0.15) 100%);
+            border-color: rgba(255, 230, 0, 0.5);
+            color: #FFE600;
             font-weight: 700;
+            box-shadow: 0 2px 8px rgba(255, 230, 0, 0.2);
         }
 
         .calendar-day.selected {
-            background: linear-gradient(135deg, #00ff87 0%, #60efff 100%);
+            background: linear-gradient(135deg, #FFE600 0%, #FFA500 100%);
             color: #000;
             font-weight: 700;
+            box-shadow: 0 4px 12px rgba(255, 230, 0, 0.4);
         }
 
         /* Day detail styles */
@@ -334,7 +353,10 @@
         .day-detail-header {
             font-size: 16px;
             font-weight: 700;
-            color: #00ff87;
+            background: linear-gradient(135deg, #FFE600 0%, #FFA500 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
             margin-bottom: 16px;
             padding-bottom: 12px;
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -370,7 +392,10 @@
         .workout-item-time {
             font-size: 18px;
             font-weight: 700;
-            color: #60efff;
+            background: linear-gradient(135deg, #FFE600 0%, #FFA500 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
             margin-right: 8px;
         }
 
@@ -431,7 +456,13 @@
                     <option value="🏋️ 200m Farmers Carry">🏋️ 200m Farmers Carry</option>
                     <option value="🎒 100m Sandbag Lunges">🎒 100m Sandbag Lunges</option>
                     <option value="🎯 Wall Balls (100 reps)">🎯 Wall Balls (100 reps)</option>
+                    <option value="custom">✏️ その他（カスタム）</option>
                 </select>
+            </div>
+
+            <div class="input-wrapper" id="customWorkoutWrapper" style="display: none;">
+                <label class="input-label">カスタム種目名</label>
+                <input type="text" id="customWorkoutName" placeholder="種目名を入力">
             </div>
 
             <div class="input-group">
@@ -543,7 +574,7 @@
 
         function addWorkout() {
             const dateKey = document.getElementById('workoutDate').value;
-            const workoutType = document.getElementById('workoutType').value;
+            let workoutType = document.getElementById('workoutType').value;
             const minutes = parseInt(document.getElementById('minutes').value) || 0;
             const seconds = parseInt(document.getElementById('seconds').value) || 0;
             const notes = document.getElementById('notes').value;
@@ -551,6 +582,16 @@
             if (!dateKey) {
                 alert('日付を選択してください');
                 return;
+            }
+
+            // Handle custom workout type
+            if (workoutType === 'custom') {
+                const customName = document.getElementById('customWorkoutName').value.trim();
+                if (!customName) {
+                    alert('カスタム種目名を入力してください');
+                    return;
+                }
+                workoutType = '✏️ ' + customName;
             }
 
             if (minutes === 0 && seconds === 0) {
@@ -576,6 +617,9 @@
             document.getElementById('minutes').value = '';
             document.getElementById('seconds').value = '';
             document.getElementById('notes').value = '';
+            document.getElementById('customWorkoutName').value = '';
+            document.getElementById('workoutType').selectedIndex = 0;
+            document.getElementById('customWorkoutWrapper').style.display = 'none';
 
             // Update calendar to reflect the new data
             renderCalendar();
@@ -706,21 +750,45 @@
             const dateKey = getDateKey(date);
             const dateDropdown = document.getElementById('workoutDate');
             
-            // Try to set the value
-            const previousValue = dateDropdown.value;
-            dateDropdown.value = dateKey;
-            
-            // If the value didn't change, the date wasn't in the dropdown
-            // Check if it's within the past 30 days
+            // Check if date is within the past 30 days
             const today = new Date();
-            const daysDiff = Math.floor((today - date) / (1000 * 60 * 60 * 24));
+            today.setHours(0, 0, 0, 0);
+            const selectedDateObj = new Date(date);
+            selectedDateObj.setHours(0, 0, 0, 0);
+            const daysDiff = Math.floor((today - selectedDateObj) / (1000 * 60 * 60 * 24));
             
-            if (daysDiff >= 0 && daysDiff < 30 && dateDropdown.value === dateKey) {
-                // Successfully set - scroll to form
+            // If date is within dropdown range (0-29 days ago), set it
+            if (daysDiff >= 0 && daysDiff < 30) {
+                dateDropdown.value = dateKey;
+                // Scroll to form for easy access
                 document.querySelector('.workout-card').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-            } else if (daysDiff < 0 || daysDiff >= 30) {
-                // Date is outside the dropdown range, reset to today
-                dateDropdown.selectedIndex = 0;
+            } else {
+                // Date is outside range - add it as a temporary option
+                // Remove any existing temp option first
+                const existingTemp = dateDropdown.querySelector('option[data-temp="true"]');
+                if (existingTemp) {
+                    existingTemp.remove();
+                }
+                
+                // Add the selected date as a temporary option at the top
+                const tempOption = document.createElement('option');
+                tempOption.value = dateKey;
+                tempOption.setAttribute('data-temp', 'true');
+                
+                const year = date.getFullYear();
+                const month = date.getMonth() + 1;
+                const day = date.getDate();
+                const weekdays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+                const weekday = weekdays[date.getDay()];
+                
+                tempOption.textContent = `${month}月${day}日 (${weekday}) - 選択中`;
+                
+                // Insert at the beginning
+                dateDropdown.insertBefore(tempOption, dateDropdown.firstChild);
+                dateDropdown.value = dateKey;
+                
+                // Scroll to form
+                document.querySelector('.workout-card').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
             }
         }
 
@@ -765,9 +833,9 @@
             `).join('');
 
             const totalTimeHTML = `
-                <div style="background: rgba(0, 255, 135, 0.1); border: 1px solid rgba(0, 255, 135, 0.3); border-radius: 12px; padding: 16px; margin-top: 12px; display: flex; justify-content: space-between; align-items: center;">
-                    <div style="font-size: 15px; font-weight: 600; color: #00ff87;">Total</div>
-                    <div style="font-size: 24px; font-weight: 700; color: #00ff87;">${formatTime(totalMinutes, totalSeconds)}</div>
+                <div style="background: linear-gradient(135deg, rgba(255, 230, 0, 0.15) 0%, rgba(255, 165, 0, 0.1) 100%); border: 1px solid rgba(255, 230, 0, 0.4); border-radius: 12px; padding: 16px; margin-top: 12px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 10px rgba(255, 230, 0, 0.15);">
+                    <div style="font-size: 15px; font-weight: 600; background: linear-gradient(135deg, #FFE600 0%, #FFA500 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Total</div>
+                    <div style="font-size: 24px; font-weight: 700; background: linear-gradient(135deg, #FFE600 0%, #FFA500 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">${formatTime(totalMinutes, totalSeconds)}</div>
                 </div>
             `;
 
@@ -781,7 +849,14 @@
         }
 
         document.getElementById('workoutType').addEventListener('change', function() {
-            document.getElementById('currentWorkout').textContent = this.value;
+            const customWrapper = document.getElementById('customWorkoutWrapper');
+            if (this.value === 'custom') {
+                customWrapper.style.display = 'block';
+                document.getElementById('currentWorkout').textContent = 'カスタム種目';
+            } else {
+                customWrapper.style.display = 'none';
+                document.getElementById('currentWorkout').textContent = this.value;
+            }
         });
 
         // Initialize
